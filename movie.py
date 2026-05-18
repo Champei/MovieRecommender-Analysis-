@@ -3,8 +3,8 @@ import numpy as np
 import os
 import streamlit as st
 
-movies=pd.read_csv("C:\\Users\\DELL\\Downloads\\ml-latest-small\\ml-latest-small\\movies.csv")   
-ratings=pd.read_csv("C:\\Users\\DELL\\Downloads\\ml-latest-small\\ml-latest-small\\ratings.csv")
+movies=pd.read_csv("movies.csv")   
+ratings=pd.read_csv("ratings.csv")
 
 df=ratings.merge(movies,on="movieId",how="left")
 
